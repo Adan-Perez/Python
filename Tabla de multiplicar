@@ -1,0 +1,7 @@
+# Tabla multiplicar para el número deseado:
+ 
+n = int(input("Escribir un número entero positivo: "))
+
+print("Tabla de multiplicar para el número: ",n, " es: ")
+for i in range (1,11):
+    print(n,"x",i,"=",n*i)
