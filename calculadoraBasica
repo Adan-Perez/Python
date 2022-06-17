@@ -1,0 +1,33 @@
+# Calculadora de dos números enteros
+def suma(n1, n2):
+    return n1+n2
+
+def resta(n1, n2):
+    return n1-n2
+
+def multiplicacion(n1, n2):
+    return n1*n2
+
+def division(n1, n2):
+    return n1/n2
+
+n1 = int(input("Escribir un número entero positivo: "))
+n2 = int(input("Escribir un número entero positivo: "))
+
+print("¿Qué operación desea realizar?")
+print("1. Suma")
+print("2. Resta")
+print("3. Multiplicación")
+print("4. División")
+opcion = int(input("Seleccionar con un número: "))
+
+if opcion == 1:
+    print("La suma de los números es: ", suma(n1, n2))
+elif opcion == 2:
+    print("La resta de los números es: ", resta(n1, n2))
+elif opcion == 3:
+    print("La multiplicación de los números es: ", multiplicacion(n1, n2))
+elif opcion == 4:
+    print("La división de los números es: ", division(n1, n2))
+else:
+    print("Opción no válida")
